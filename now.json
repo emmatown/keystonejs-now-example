@@ -8,5 +8,6 @@
         "includeFiles": "dist/**"
       }
     }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/now.js" }]
 }
