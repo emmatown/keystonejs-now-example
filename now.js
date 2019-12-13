@@ -1,6 +1,5 @@
 const express = require("express");
 const { keystone, apps } = require("./index.js");
-
 let middlewarePromise = keystone
   .prepare({ apps })
   .then(async ({ middlewares }) => {
