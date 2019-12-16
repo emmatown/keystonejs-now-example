@@ -8,7 +8,7 @@
       "src": "now.js",
       "use": "@now/node",
       "config": {
-        "includeFiles": "dist/**"
+        "includeFiles": ["dist/**", "public/**"]
       }
     }
   ],
