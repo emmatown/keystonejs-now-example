@@ -1593,6 +1593,14 @@
     serialize-error "^3.0.0"
     stack-utils "^1.0.2"
 
+"@keystonejs/app-static@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@keystonejs/app-static/-/app-static-5.0.0.tgz#c7f9e3973be5b6d22ccaefa444b8859bec3411fd"
+  integrity sha512-3LGrSb+D4kkPJARkBVOBSSEmSDtP7LEkPFPzhdEcwHE3G1/uM2acAlgpQpWZ+iVapujXvc1E0vtxvuNEUyAZSQ==
+  dependencies:
+    express-history-api-fallback "^2.2.1"
+    fs-extra "^7.0.0"
+
 "@keystonejs/auth-password@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@keystonejs/auth-password/-/auth-password-5.0.1.tgz#f5c2306297e021d0f9c12e99b21044e9f2ca2539"
@@ -3489,13 +3497,6 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-connect-mongo@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-3.2.0.tgz#20f776c7f2a9d8144fc76cfdcbf33edb05eb4d52"
-  integrity sha512-0Mx88079Z20CG909wCFlR3UxhMYGg6Ibn1hkIje1hwsqOLWtL9HJV+XD0DAjUvQScK6WqY/FA8tSVQM9rR64Rw==
-  dependencies:
-    mongodb "^3.1.0"
-
 console-browserify@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.2.0.tgz#67063cef57ceb6cf4993a2ab3a55840ae8c49336"
@@ -4347,7 +4348,7 @@ express-pino-logger@^4.0.0:
   dependencies:
     pino-http "^4.0.0"
 
-express-session@^1.16.2, express-session@^1.17.0:
+express-session@^1.16.2:
   version "1.17.0"
   resolved "https://registry.yarnpkg.com/express-session/-/express-session-1.17.0.tgz#9b50dbb5e8a03c3537368138f072736150b7f9b3"
   integrity sha512-t4oX2z7uoSqATbMfsxWMbNjAL0T5zpvcJCk3Z9wnPPN7ibddhnmDZXHfEcoBMG2ojKXZoCyPMc5FbtK+G7SoDg==
@@ -6321,17 +6322,6 @@ mongodb@3.3.5:
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.3.5.tgz#38d531013afede92b0dd282e3b9f3c08c9bdff3b"
   integrity sha512-6NAv5gTFdwRyVfCz+O+KDszvjpyxmZw+VlmqmqKR2GmpkeKrKFRv/ZslgTtZba2dc9JYixIf99T5Gih7TIWv7Q==
-  dependencies:
-    bson "^1.1.1"
-    require_optional "^1.0.1"
-    safe-buffer "^5.1.2"
-  optionalDependencies:
-    saslprep "^1.0.0"
-
-mongodb@^3.1.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.4.0.tgz#3490bcdcadb9acfbf77e5ce14548bd59ba33a5f6"
-  integrity sha512-W90jm/n8F0Edm47ljkVRK9l8qGW9g8T9ZSiZWRiUP58wLhsCJCeN/JxdpVnH0CUwwAw2hITUcCo9x58udpX2Uw==
   dependencies:
     bson "^1.1.1"
     require_optional "^1.0.1"
