@@ -1,12 +1,9 @@
-const crypto = require('crypto');
-const randomString = () => crypto.randomBytes(6).hexSlice();
-
 module.exports = async keystone => {
   // Count existing users
   const {
     data: {
-      _allUsersMeta: { count },
-    },
+      _allUsersMeta: { count }
+    }
   } = await keystone.executeQuery(
     `query {
       _allUsersMeta {
@@ -16,8 +13,8 @@ module.exports = async keystone => {
   );
 
   if (count === 0) {
-    const password = randomString();
-    const email = 'admin@example.com';
+    const password = process.env.DEFAULT_PASSWORD;
+    const email = "admin@example.com";
 
     await keystone.executeQuery(
       `mutation initialUser($password: String, $email: String) {
@@ -28,8 +25,8 @@ module.exports = async keystone => {
       {
         variables: {
           password,
-          email,
-        },
+          email
+        }
       }
     );
 

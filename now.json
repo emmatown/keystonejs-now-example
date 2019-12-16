@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "env": {
+    "DEFAULT_PASSWORD": "@default-password"
+  },
   "builds": [
     {
       "src": "now.js",
